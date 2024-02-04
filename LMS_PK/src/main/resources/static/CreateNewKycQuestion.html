@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>New Kyc Question</title>
+<link rel="stylesheet" type="text/css" href="Global.css">
+	
+
+	
+
+</head>
+
+<body>
+<form>
+<h2>Create New Kyc Question</h2>
+
+<p>
+  KYC Question
+    <label for="kycQuestion"></label>
+  <input type="text" name="kycQuestion" id="kycQuestion">
+</p>
+
+<p>
+  <label for="select">Answer Type</label>
+  <select id="answerType" onclick="handleAnswerTypeDropDown()">
+	<option value="string">STRING</option>
+	<option value="number">NUMBER</option>
+	<option value="boolean">BOOLEAN</option>
+	<option value="date">DATE</option>
+	<option value="percentage">PERCENTAGE</option>
+	<option value="picture">PICTURE</option>
+	<option value="enum">ENUM</option>
+  </select>
+</p>
+
+<p>
+  <label id="possibleAnswerLabel" for="possibleAnswer">List of Possible Answer(Comma Seperated)</label>
+  <input type="text" name="possibleAnswer" id="possibleAnswer">
+</p>
+
+<p>
+  <label for="select">Question Category </label>
+  <select id="category">
+    <option value="cnicPicture">CNIC Picture</option>
+	<option value="cnicInfo">CNIC Info</option>
+	<option value="personalInfo">Personal Info</option>
+	<option value="incomeInfo">Income Info</option>
+	<option value="additionalInfo">Additional Info</option>
+  </select>
+</p>
+	
+<p>
+  <label for="select">Mandatory</label>
+  <select id="mandatoryStatus" onclick="handleMandatoryQuestion()">
+    <option value="optional">Optional</option>
+	<option value="required">Required</option>
+  </select>
+</p>
+
+	
+<p>
+  <label id="expiryTimeLabel" for="expiryTime">Expiry Time(Days: 0 for Never Expired OR Any Positive Number)</label>
+  <input type="text" name="expiryTime" id="expiryTime">
+</p>
+
+
+<p>
+  <input type="button" name="submit" id="submit" value="Submit" onClick="begin()">
+  <input type="button" name="submit"  id="update" value="Update" onClick="updateBegin()" >
+  <input type="button" name="cancel" id="cancel" value="Cancel" onClick="back()">
+</p>
+</form>
+</body>
+	<script src="CreateNewKycQuestion.js"></script>
+</html>

@@ -1,0 +1,28 @@
+node {
+	stage('SCM Checkout'){
+		git branch: 'master', credentialsId: '12394e3b-5c57-4e87-a8a2-121e68860b39', url: 'git@github.com:MonamiTechnology/LMS_PK.git'
+		
+	}
+	stage('Build') {
+		sh 'fuser -k -n tcp 9000 || true'
+   	 	//sh 'rm -rf ${JENKINS_HOME}/workspace/LMS/src/main/resources/static'
+		sh 'mkdir -p ${JENKINS_HOME}/workspace/LMS/src/main/resources/static/temp'
+		dir("${JENKINS_HOME}/workspace/LMS/src/main/resources/static/temp"){
+			sh "pwd"
+			git branch: 'master', credentialsId: '12394e3b-5c57-4e87-a8a2-121e68860b39', url: 'git@github.com:MonamiTechnology/lmsfrontendreact.git'
+		}
+		sh 'cp -R "${JENKINS_HOME}/workspace/LMS/src/main/resources/static/temp/build/." "${JENKINS_HOME}/workspace/LMS/src/main/resources/static/new-portal"'		
+		sh 'rm -rf ${JENKINS_HOME}/workspace/LMS/src/main/resources/static/temp'
+		
+    }
+    
+    stage('Compile-Package'){
+		sh 'mvn package'
+	}
+	stage('Deploy'){
+		dir("${JENKINS_HOME}/workspace/LMS/target"){
+			sh 'cp ${JENKINS_HOME}/workspace/LMS/keystore.p12 ${JENKINS_HOME}/workspace/LMS/target/keystore.p12'
+			sh 'JENKINS_NODE_COOKIE=dontKillMe nohup java -jar	finstar-backend-0.0.1-SNAPSHOT.jar &'
+		}
+	}
+}

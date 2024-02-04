@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blueprint: Multi-Level Menu</title>
+	<meta name="description" content="Blueprint: A basic template for a responsive multi-level menu" />
+	<meta name="keywords" content="blueprint, template, html, css, menu, responsive, mobile-friendly" />
+	<meta name="author" content="Codrops" />
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- food icons -->
+	<link rel="stylesheet" type="text/css" href="css/organicfoodicons.css" />
+	<!-- demo styles -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- menu styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+	<script src="js/modernizr-custom.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script> 
+	
+</head>
+
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<div class="dummy-logo">
+				<div class="dummy-icon foodicon foodicon--coconut"></div>
+				<h2 class="dummy-heading">Cashew</h2>
+			</div>
+			<div class="bp-header__main">
+				<span class="bp-header__present">MonamiTech Pakistan</span>
+				<h1 class="bp-header__title">Cashew Portal</h1>
+			</div>
+		</header>
+		<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+		<nav id="ml-menu" class="menu">
+			<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+			<div class="menu__wrap">
+				<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
+					<li class="menu__item" role="menuitem">
+						<a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="#">User Management</a>
+					</li>
+					<li class="menu__item" role="menuitem">
+						<a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">Customer Care</a>
+					</li>
+					<li class="menu__item" role="menuitem">
+						<a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">Product Handling</a>
+					</li>
+					<li class="menu__item" role="menuitem">
+						<a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="#">KYC Questions</a>
+					</li>
+					<li class="menu__item" role="menuitem">
+						<a class="menu__link" data-submenu="submenu-5" aria-owns="submenu-5" href="#">Assumptions Management</a>
+					</li>
+					<li class="menu__item" role="menuitem">
+						<a class="menu__link" data-submenu="submenu-6" aria-owns="submenu-6" href="#">Role Management</a>
+					</li>
+					<li class="menu__item" role="menuitem">
+						<a class="menu__link" data-submenu="submenu-7" aria-owns="submenu-7" href="#">Loan Management</a>
+					</li>
+					<li class="menu__item" role="menuitem">
+						<a class="menu__link" data-submenu="submenu-8" aria-owns="submenu-8" href="#">General Ledger Details</a>
+					</li>
+				</ul>
+				<!-- Submenu 1 -->
+				<ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="User Management">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Add User</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">User Info</a></li>
+				</ul>
+				<!-- Submenu 2 -->
+				<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Customer Care">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Pending Customer</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Registered Customer</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Suspended Customer</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Blocked Customer</a></li>
+				</ul>
+				<!-- Submenu 3 -->
+				<ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Product Handling">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Add Product</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Product Details</a></li>
+				</ul>
+				<!-- Submenu 4 -->
+				<ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu" aria-label="KYC Questions">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Add KYC Question</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">KYC Question Info</a></li>
+				</ul>
+				<!-- Submenu 5 -->
+				<ul data-menu="submenu-5" id="submenu-5" class="menu__level" tabindex="-1" role="menu" aria-label="Assumptions Management">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Add Assumption</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Assumption Info</a></li>
+				</ul>
+				<!-- Submenu 6 -->
+				<ul data-menu="submenu-6" id="submenu-6" class="menu__level" tabindex="-1" role="menu" aria-label="Role Management">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Add Role</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Role Priv Mapping Details</a></li>
+				</ul>
+				<ul data-menu="submenu-7" id="submenu-7" class="menu__level" tabindex="-1" role="menu" aria-label="Loan Management">
+					<li class="menu__item" role="menuitem">
+						<a class="menu__link" data-submenu="loanManagementSubmenu-1" aria-owns="loanManagementSubmenu-1" href="#">Loan Applications</a>
+					</li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Check/Mark For Late Payment Fee</a></li>
+					<li class="menu__item" role="menuitem">
+						<a class="menu__link" data-submenu="loanManagementSubmenu-2" aria-owns="loanManagementSubmenu-2" href="#">Disbursed Loans</a>
+					</li>
+					<!-- <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Loan Applications</a></li> -->
+					<!--<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Approved/Dispersed Loan Applications</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Check/Mark For Late Payment Fee</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Unpaid Loan Requests</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Paid Loan Requests</a></li>
+					 <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Repayment Loan</a></li> -->
+					
+					
+				</ul>
+				<ul data-menu="submenu-8" id="submenu-8" class="menu__level" tabindex="-1" role="menu" aria-label="General Ledger Details">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Loan Receivable Account</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Service Fee Income Account</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Late Payment Fee Account</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">FED Liability Account</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">One Load Wallet Account</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">SimSim Wallet Account</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">JazzCash Wallet Account</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Account Payable</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Internal Loan Book Account</a></li>
+				</ul>
+				
+				<ul data-menu="loanManagementSubmenu-1" id="loanManagementSubmenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Loan Applications">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Pending Loan Applications</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Approved Loan Applications</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Rejected Loan Applications</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Accepted Loan Applications</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Declined Loan Applications</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Disbursed Loan Applications</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Completed Loan Applications</a></li>
+				</ul>
+				<ul data-menu="loanManagementSubmenu-2" id="loanManagementSubmenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Disbursed Loans">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Unpaid Loans</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">WriteOff Loans</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Paid Loans</a></li>
+				</ul>
+				
+				
+				
+				
+			</div>
+		</nav>
+		<div id="content" class="contentDiv">
+			<!-- Ajax loaded content here -->
+		</div>
+		
+		
+		
+		
+	</div>
+	
+	<script src="js/classie.js"></script>
+	<script src="js/dummydata.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	(function() {
+		var menuEl = document.getElementById('ml-menu'),
+			mlmenu = new MLMenu(menuEl, {
+				backCtrl : false, // show back button
+				onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+			});
+
+		// mobile menu toggle
+		var openMenuCtrl = document.querySelector('.action--open'),
+			closeMenuCtrl = document.querySelector('.action--close');
+
+		openMenuCtrl.addEventListener('click', openMenu);
+		closeMenuCtrl.addEventListener('click', closeMenu);
+
+		function openMenu() {
+			classie.add(menuEl, 'menu--open');
+			closeMenuCtrl.focus();
+		}
+
+		function closeMenu() {
+			classie.remove(menuEl, 'menu--open');
+			openMenuCtrl.focus();
+		}
+
+		// simulate grid content loading
+		var gridWrapper = document.querySelector('.content');
+
+		function loadDummyData(ev, itemName) {
+			console.log("Received Parameters");
+			console.log("EV: "+ev);
+			console.log("Item Name: "+itemName);
+			
+			
+			if(itemName=="Add User"){
+				deleteCookie("selectedUserId");
+				deleteCookie("selectedUserUsername");
+				$('#content').load('CreateNewUser.html');			
+			}
+			else if(itemName=="User Info"){
+				$('#content').load('UserInfoUsingDynamicTable.html');			
+			}
+			else if(itemName=="Pending Customer"){
+				$('#content').load('PendingCustomersInfo.html');			
+			}
+			else if(itemName=="Registered Customer"){
+				$('#content').load('RegisteredCustomersInfo.html');			
+			}
+			else if(itemName=="Suspended Customer"){
+				$('#content').load('SuspendedCustomersInfo.html');			
+			}
+			else if(itemName=="Blocked Customer"){
+				$('#content').load('BlockedCustomersInfo.html');			
+			}
+			else if(itemName=="Add Product"){
+				$('#content').load('CreateNewProductScreenOne.html');			
+			}
+			else if(itemName=="Product Details"){
+				$('#content').load('ProductInfo.html');			
+			}
+			else if(itemName=="Add KYC Question"){
+				deleteCookie("selectedKycQuestionId");
+				deleteCookie("selectedKycQuestion");
+				$('#content').load('CreateNewKycQuestion.html');			
+			}
+			else if(itemName=="KYC Question Info"){
+				$('#content').load('KycQuestionInfo.html');			
+			}
+			else if(itemName=="Add Assumption"){
+				deleteCookie("selectedAssumptionId");
+				deleteCookie("selectedAssumption");
+				$('#content').load('CreateNewAssumption.html');			
+			}
+			else if(itemName=="Assumption Info"){
+				$('#content').load('ProductSpecificationAssumptionsInfo.html');			
+			}
+			else if(itemName=="Add Role"){
+				deleteCookie("selectedRoleId");
+				deleteCookie("selectedRole");
+				$('#content').load('CreateNewRole.html');			
+			}
+			else if(itemName=="Add Privilege"){
+			}
+			else if(itemName=="Role Priv Mapping Details"){
+				$('#content').load('RolesInfo.html');			
+			}
+			
+			
+			else if(itemName=="Pending Loan Applications"){
+				$('#content').load('ApplicationInfoPending.html');			
+			}
+			else if(itemName=="Approved Loan Applications"){
+				$('#content').load('ApplicationInfoApproved.html');
+			}
+			else if(itemName=="Rejected Loan Applications"){
+				$('#content').load('ApplicationInfoRejected.html');
+			}
+			else if(itemName=="Accepted Loan Applications"){
+				$('#content').load('ApplicationInfoAccepted.html');
+			}
+			else if(itemName=="Declined Loan Applications"){
+				$('#content').load('ApplicationInfoDeclined.html');
+			}
+			else if(itemName=="Disbursed Loan Applications"){
+				$('#content').load('ApplicationInfoDisbursed.html');
+			}
+			else if(itemName=="Completed Loan Applications"){
+				$('#content').load('ApplicationInfoCompleted.html');
+			}
+			else if(itemName=="Check/Mark For Late Payment Fee"){
+				$('#content').load('CheckAndMarkForLatePaymentFee.html');
+			}
+			else if(itemName=="Unpaid Loans"){
+				$('#content').load('DisbursedUnpaidLoansInfo.html');
+			}
+			else if(itemName=="WriteOff Loans"){
+				$('#content').load('DisbursedWriteOffLoansInfo.html');
+			}
+			else if(itemName=="Paid Loans"){
+				$('#content').load('DisbursedPaidLoansInfo.html');
+			}
+			else if(itemName=="Loan Receivable Account"){
+				writeCookie("glIdToGet",1, "1");
+				$('#content').load('GeneralLedgerInfo.html');			
+			}
+			else if(itemName=="Service Fee Income Account"){
+				writeCookie("glIdToGet",2, "1");
+				$('#content').load('GeneralLedgerInfo.html');			
+			}
+			else if(itemName=="Late Payment Fee Account"){
+				writeCookie("glIdToGet",3, "1");
+				$('#content').load('GeneralLedgerInfo.html');			
+			}
+			else if(itemName=="FED Liability Account"){
+				writeCookie("glIdToGet",4, "1");
+				$('#content').load('GeneralLedgerInfo.html');			
+			}
+			else if(itemName=="One Load Wallet Account"){
+				writeCookie("glIdToGet",5, "1");
+				$('#content').load('GeneralLedgerInfo.html');			
+			}
+			else if(itemName=="SimSim Wallet Account"){
+				writeCookie("glIdToGet",6, "1");
+				$('#content').load('GeneralLedgerInfo.html');			
+			}
+			else if(itemName=="JazzCash Wallet Account"){
+				writeCookie("glIdToGet",7, "1");
+				$('#content').load('GeneralLedgerInfo.html');			
+			}
+			else if(itemName=="Account Payable"){
+				writeCookie("glIdToGet",8, "1");
+				$('#content').load('GeneralLedgerInfo.html');			
+			}
+			else if(itemName=="Internal Loan Book Account"){
+				writeCookie("glIdToGet",9, "1");
+				$('#content').load('GeneralLedgerInfo.html');			
+			}
+			else{
+				alert("Page Navigation not Found");			
+			}
+			 
+		}
+		
+		function deleteCookie(name) {
+		    document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+		};
+		
+		function writeCookie(cname, cvalue, exdays) {
+			  var d = new Date();
+			  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+			  var expires = "expires="+ d.toUTCString();
+			  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+			};
+
+
+	})();
+	</script>
+</body>
+
+</html>

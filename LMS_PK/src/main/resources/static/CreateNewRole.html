@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Add New Role</title>
+<link rel="stylesheet" type="text/css" href="Global.css">
+</head>
+
+<body>
+
+
+<form>
+
+<h2>Add New Role</h2>
+<p>
+  Role Name
+  <label for="roleName"></label>
+  <input type="text" name="roleName" id="roleName">
+</p>
+
+<p>
+  Role Description
+  <label for="roleDiscription"></label>
+  <input type="text" name="roleDiscription" id="roleDiscription">
+</p>
+
+<div>
+	<div class="checkBoxDiv">
+	  <input class="container" type="checkbox" name="userMgmt" id="userMgmt" value="userMgmt" onChange="handleRadioButton(this.id)">
+	  <label for="userMgmt">User Management</label>
+	</div>
+	
+	<div class="radioButtonDiv">
+	  <input type="radio" name="readAndWriteOptionForUserMgmt" id="readOptionForUserMgmt" value="USER_MANAGEMENT_R">
+	  <label for="readOnlyForUserMgmt">Read Only </label>
+	  
+	  <input type="radio" name="readAndWriteOptionForUserMgmt" id="readAndWriteOptionForUserMgmt" value="USER_MANAGEMENT_RW">
+	  <label for="readAndWriteForUserMgmt">Read And Write </label>
+	</div>
+</div>
+
+
+<div>	
+
+	<div class="checkBoxDiv">
+	  <input class="container" type="checkbox" name="customerManagement" id="customerManagement"  value="customerManagement" onChange="handleRadioButton(this.id)">
+	  <label for="customerManagement">Customer Management</label>
+	</div>
+	<div class="radioButtonDiv">
+	  <input type="radio" name="readAndWriteOptionForCustomerManagement" id="readOptionForCustomerManagement" value="CUSTOMER_MANAGEMENT_R">
+	  <label for="readOptionForCustomerManagement">Read Only </label>
+		
+	  <input type="radio" name="readAndWriteOptionForCustomerManagement" id="readAndWriteOptionForCustomerManagement" value="CUSTOMER_MANAGEMENT_RW">
+	  <label for="readAndWriteOptionForCustomerManagement">Read And Write </label>
+	</div>
+</div>
+
+	
+<div>	
+	<div class="checkBoxDiv"> 
+	  <input class="container" type="checkbox" name="productManagement" id="productManagement"  value="productManagement" onChange="handleRadioButton(this.id)">
+	  <label for="productManagement">Product Management</label>
+	</div>
+	<div class="radioButtonDiv">
+	  <input type="radio" name="readAndWriteOptionForProductManagement" id="readOptionForProductManagement" value="PRODUCT_MANAGEMENT_R">
+	  <label for="readOptionForProductManagement">Read Only</label>
+		
+	  <input type="radio" name="readAndWriteOptionForProductManagement" id="readAndWriteOptionForProductManagement" value="PRODUCT_MANAGEMENT_RW">
+	  <label for="readAndWriteOptionForProductManagement">Read And Write</label>
+	</div>
+</div>
+	
+<div>	
+	<div class="checkBoxDiv">
+	  <input class="container" type="checkbox" name="assumptionManagement" id="assumptionManagement"  value="assumptionManagement" onChange="handleRadioButton(this.id)">
+	  <label for="assumptionManagement">Assumption Management</label>
+	</div>
+	<div class="radioButtonDiv">
+	  <input type="radio" name="readAndWriteOptionForAssumptionManagement" id="readOptionForAssumptionManagement" value="ASSUMPTION_MANAGEMENT_R">
+	  <label for="readOptionForAssumptionManagement">Read Only </label>
+		
+	  <input type="radio" name="readAndWriteOptionForAssumptionManagement" id="readAndWriteOptionForAssumptionManagement" value="ASSUMPTION_MANAGEMENT_RW">
+	  <label for="readAndWriteOptionForAssumptionManagement">Read And Write </label>
+	</div>
+</div>
+
+
+<div>	
+	<div class="checkBoxDiv">
+	  <input class="container" type="checkbox" name="kycManagement" id="kycManagement"  value="kycManagement" onChange="handleRadioButton(this.id)">
+	  <label for="kycManagement">KYC Management</label>
+	</div>
+	<div class="radioButtonDiv">
+	  <input type="radio" name="readAndWriteOptionForKYCManagement" id="readOptionForKYCManagement" value="KYC_MANAGEMENT_R">
+	  <label for="readOptionForKYCManagement">Read Only </label>
+		
+	  <input type="radio" name="readAndWriteOptionForKYCManagement" id="readAndWriteOptionForKYCManagement" value="KYC_MANAGEMENT_RW">
+	  <label for="readAndWriteOptionForKYCManagement">Read And Write </label>
+	</div>
+</div>
+
+<div>	
+	<div class="checkBoxDiv">
+	  <input class="container" type="checkbox" name="roleManagement" id="roleManagement"  value="roleManagement" onChange="handleRadioButton(this.id)">
+	  <label for="roleManagement">Role Management</label>
+	</div>
+	<div class="radioButtonDiv">
+	  <input type="radio" name="readAndWriteOptionForRoleManagement" id="readOptionForRoleManagement" value="ROLE_MANAGEMENT_R">
+	  <label for="readOptionForRoleManagement">Read Only </label>
+		
+	  <input type="radio" name="readAndWriteOptionForRoleManagement" id="readAndWriteOptionForRoleManagement" value="ROLE_MANAGEMENT_RW">
+	  <label for="readAndWriteOptionForRoleManagement">Read And Write </label>
+	</div>
+</div>	
+
+<div>	
+	<div class="checkBoxDiv">
+	  <input class="container" type="checkbox" name="privilegeManagement" id="privilegeManagement"  value="privilegeManagement" onChange="handleRadioButton(this.id)">
+	  <label for="privilegeManagement">Privilege Management</label>
+	</div>
+	<div class="radioButtonDiv">
+	  <input type="radio" name="readAndWriteOptionForPrivilegeManagement" id="readOptionForPrivilegeManagement" value="PRIV_MANAGEMENT_R">
+	  <label for="readOptionForPrivilegeManagement">Read Only </label>
+		
+	  <input type="radio" name="readAndWriteOptionForPrivilegeManagement" id="readAndWriteOptionForPrivilegeManagement" value="PRIV_MANAGEMENT_RW">
+	  <label for="readAndWriteOptionForPrivilegeManagement">Read And Write </label>
+	</div>
+</div>	
+
+<div>	
+	<div class="checkBoxDiv">
+	  <input class="container" type="checkbox" name="generalLedgerManagement" id="generalLedgerManagement"  value="generalLedgerManagement" onChange="handleRadioButton(this.id)">
+	  <label for="generalLedgerManagement">General Ledger Management</label>
+	</div>
+	<div class="radioButtonDiv">
+	  <input type="radio" name="readAndWriteOptionForGeneralLedgerManagement" id="readOptionForGeneralLedgerManagement" value="GENERAL_LEDGER_MANAGEMENT_R">
+	  <label for="readOptionForGeneralLedgerManagement">Read Only </label>
+		
+	  <input type="radio" name="readAndWriteOptionForGeneralLedgerManagement" id="readAndWriteOptionForGeneralLedgerManagement" value="GENERAL_LEDGER_MANAGEMENT_RW">
+	  <label for="readAndWriteOptionForGeneralLedgerManagement">Read And Write </label>
+	</div>
+</div>	
+	
+<div>	
+	<div class="checkBoxDiv">
+	  <input class="container" type="checkbox" name="loanManagement" id="loanManagement"  value="loanManagement" onChange="handleRadioButton(this.id)">
+	  <label for="loanManagement">Loan Management</label>
+	</div>
+	<div class="radioButtonDiv">
+	  <input type="radio" name="readAndWriteOptionForLoanManagement" id="readOptionForLoanManagement" value="LOAN_MANAGEMENT_R">
+	  <label for="readOptionForLoanManagement">Read Only </label>
+		
+	  <input type="radio" name="readAndWriteOptionForLoanManagement" id="readAndWriteOptionForLoanManagement" value="LOAN_MANAGEMENT_RW">
+	  <label for="readAndWriteOptionForLoanManagement">Read And Write </label>
+	</div>
+</div>		 
+
+
+
+<p>
+  <input type="button" name="submit" id="submit" value="Submit" onClick="begin()">
+  <input type="button" name="update" id="update" value="Update" onClick="beginUpdate()">
+  <input type="button" name="cancel" id="cancel" value="Cancel" onClick="back()">
+</p>
+</form>
+</body>
+	<script src="CreateNewRole.js"></script>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Add New Assumption</title>
+ <link rel="stylesheet" type="text/css" href="Global.css">
+</head>
+
+<body>
+
+
+<form>
+<h2>Add New Assumption</h2>
+<p>
+  Assumption Name
+    <label for="assumptionName"></label>
+  <input type="text" id="assumptionName" name="assumptionName">
+</p>
+
+<p>
+  <label for="select">Assumption Type</label>
+  <select id="assumptionType">
+	<option value="string">STRING</option>
+	<option value="number">NUMBER</option>
+	<option value="boolean">BOOLEAN</option>
+	<option value="date">DATE</option>
+	<option value="percentage">PERCENTAGE</option>
+	<option value="picture">PICTURE</option>
+  </select>
+</p>
+
+
+<p>
+  <input type="button" name="submit" id="submit" value="Submit" onClick="begin()">
+  <input type="button" name="submit"  id="update" value="Update" onClick="updateBegin()" >
+  <input type="button" name="cancel" id="cancel" value="Cancel" onClick="back()">
+</p>
+</form>
+</body>
+	<script src="CreateNewAssumption.js"></script>
+</html>

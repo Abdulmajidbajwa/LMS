@@ -1,0 +1,46 @@
+table {
+	/* background-image:url(seven-samurai.jpg); */
+	background-size: cover;
+	border-collapse: collapse;
+}
+table caption {
+	font-size: larger;
+	padding: 1em;
+}
+table td {
+	padding: .5em;
+}
+table thead tr {
+	background: white;
+	color: black;
+}
+
+table tbody tr:nth-child(odd) { 
+	background: rgba(0,0,0,0.3);
+}
+
+table tbody tr:hover {
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+	cursor: pointer;
+}
+
+table thead tr th a {
+	text-decoration: none;
+	color: #fff;
+	background: #000;
+	padding: .5em;
+	display: block;
+}
+table thead tr th a:hover {
+	background: #777;
+}
+
+table col:target {
+	background: rgba(255,0,0,0.5);
+	color: white;
+}
+
+table col:nth-child(odd) {
+	background: rgba(255,0,0,0.3);
+}

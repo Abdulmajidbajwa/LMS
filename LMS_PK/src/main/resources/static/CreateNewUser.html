@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>test</title>
+	 <link rel="stylesheet" type="text/css" href="Global.css"> 
+<script>
+	
+/* window.onload = function() {
+	console.log("CreateNewUser Page is Populated and JS is Running on Load");
+	console.log("Calling disableRadioButtons Function");
+	disableRadioButtons();
+};
+
+function disableRadioButtons(){
+	var inputs = document.getElementsByTagName('input');
+
+	for(var i = 0; i < inputs.length; i++) {
+	    if(inputs[i].type.toLowerCase() == 'radio') {
+	    	inputs[i].disabled = true;
+	    }
+	}
+} */
+</script>
+	
+</head>
+<!-- <body onunload="deleteCookie()" onabort="deleteCookie()" oncancel="deleteCookie()" onchange="deleteCookie()" onreset="deleteCookie()" onclose="deleteCookie()" onended="deleteCookie()" onbeforeunload="deleteCookie()"> -->
+
+<body>
+
+<header class="header">
+  <h1>Create User Panel</h1>
+</header>
+
+<p>&nbsp;</p>
+<form name="form" class="form" id="form">
+	
+<h3>Please add user details </h3>
+	
+<p>
+  <label for="employeeName">Employee Name:</label>
+  <input type="text" name="employeeName" id="employeeName" required>
+</p>
+<p>
+  <label for="employeeUsername">Employee UserName/Email:(*******@monamitech.com)</label>
+  <input type="text" name="employeeUsername" id="employeeUsername" required>
+</p>
+	
+<p>
+  <label for="select">Category :</label>
+  <select id="employeeCategory">
+	  <option value="product">Product</option>
+	  <option value="staff">Staff</option>
+	  <option value="operation">Operation</option>
+	  <option value="admin">Admin</option>
+	</select>
+</p>
+
+<p>
+  <label for="select">Role :</label>
+  <select id="role">
+	  
+  </select>
+</p>
+
+<!-- <div>
+	<div class="checkBoxDiv">
+	  <input class="container" type="checkbox" name="userMgmt" id="userMgmt" value="userMgmt" onChange="handleRadioButton(this.id)">
+	  <label for="userMgmt">User Management </label>
+	</div>
+	
+	<div class="radioButtonDiv">
+	  <input type="radio" name="readAndWriteOptionForUserMgmt" id="readAndWriteOptionForUserMgmt" value="USER_MANAGEMENT_R">
+	  <label for="readOnlyForUserMgmt">Read Only </label>
+	  
+	  <input type="radio" name="readAndWriteOptionForUserMgmt" id="readAndWriteOptionForUserMgmt" value="USER_MANAGEMENT_RW">
+	  <label for="readAndWriteForUserMgmt">Read And Write </label>
+	</div>
+</div>
+
+
+
+<div>	
+
+	<div class="checkBoxDiv">
+	  <input class="container" type="checkbox" name="regCustomerList" id="regCustomerList"  value="regCustomerList" onChange="handleRadioButton(this.id)">
+	  <label for="regCustomerList">Reg. Customer List </label>
+	</div>
+	<div class="radioButtonDiv">
+	  <input type="radio" name="readAndWriteOptionForRegCustomerList" id="readAndWriteOptionForRegCustomerList" value="REG_CUSTOMER_LIST_R">
+	  <label for="readOnlyForRegCustomerList">Read Only </label>
+		
+	  <input type="radio" name="readAndWriteOptionForRegCustomerList" id="readAndWriteOptionForRegCustomerList" value="REG_CUSTOMER_LIST_RW">
+	  <label for="readAndWriteForRegCustomerList">Read And Write </label>
+	</div>
+</div>
+
+	
+<div>	
+
+	<div class="checkBoxDiv"> 
+	  <input class="container" type="checkbox" name="notificationMenu" id="notificationMenu"  value="notificationMenu" onChange="handleRadioButton(this.id)">
+	  <label for="notificationMenu">Notification Menu</label>
+	</div>
+	<div class="radioButtonDiv">
+	  <input type="radio" name="readAndWriteOptionForNotificationMenu" id="readAndWriteOptionForNotificationMenu" value="NOTIFICATION_R">
+	  <label for="readOnlyForNotificationMenu">Read Only </label>
+		
+	  <input type="radio" name="readAndWriteOptionForNotificationMenu" id="readAndWriteOptionForNotificationMenu" value="NOTIFICATION_RW">
+	  <label for="readAndWriteForNotificationMenu">Read And Write </label>
+	</div>
+</div>
+	
+<div>	
+
+	<div class="checkBoxDiv">
+	  <input class="container" type="checkbox" name="kycValidation" id="kycValidation"  value="kycValidation" onChange="handleRadioButton(this.id)">
+	  <label for="kycValidation">KYC Validation</label>
+	</div>
+	<div class="radioButtonDiv">
+	  <input type="radio" name="readAndWriteOptionForKYCValidation" id="readAndWriteOptionForKYCValidation" value="KYC_VALIDATION_R">
+	  <label for="readOnlyForKYCValidation">Read Only </label>
+		
+	  <input type="radio" name="readAndWriteOptionForKYCValidation" id="readAndWriteOptionForKYCValidation" value="KYC_VALIDATION_RW">
+	  <label for="readAndWriteForKYCValidation">Read And Write </label>
+	</div>
+</div>
+	
+<div>	
+
+	<div class="checkBoxDiv">
+	  <input class="container" type="checkbox" name="loanDispersal" id="loanDispersal"  value="loanDispersal" onChange="handleRadioButton(this.id)">
+	  <label for="loanDispersal">Loan Dispersal</label>
+	</div>
+	<div class="radioButtonDiv">
+	  <input type="radio" name="readAndWriteOptionForLoanDispersal" id="readAndWriteOptionForLoanDispersal" value="LOAN_DISPERSAL_R">
+	  <label for="readOnlyForLoanDispersal">Read Only </label>
+		
+	  <input type="radio" name="readAndWriteOptionForLoanDispersal" id="readAndWriteOptionForLoanDispersal" value="LOAN_DISPERSAL_RW">
+	  <label for="readAndWriteForLoanDispersal">Read And Write </label>
+	</div>
+</div>	 -->
+
+<p>&nbsp;</p>
+<p>
+  <input type="button" name="submit"  class="submitRegistrationForm" id="submit" value="Submit" onClick="begin()" >
+  <input type="button" name="submit"  class="updateRegistrationForm" id="update" value="Update" onClick="updateBegin()">
+  <input type="button" name="cancel" id="cancel" value="Cancel" onClick="back()">
+</p>
+<p>&nbsp;</p>
+	
+	<div id="result"></div> 
+</form>
+	
+</body>	
+
+<script src="CreateNewUser.js"></script>
+	
+</html>
+
+															   
+															   
+															   

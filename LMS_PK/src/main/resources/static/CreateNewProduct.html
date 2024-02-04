@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CreateNewProduct</title>
+ <link rel="stylesheet" type="text/css" href="Global.css"> 
+	
+
+</head>
+
+<body>
+
+
+<form>
+<h2>Create New Product</h2>
+<p>
+  Product Name
+    <input type="text" name="productName" id="productName">
+</p>
+<p>
+  <label for="select">Product Type </label>
+  <select id="productType">
+    <option>Personal</option>
+	<option>Individual</option>
+	<option>Partner</option>
+  </select>
+</p>
+<p>
+  <label for="minLoanAmount">Loan Amount</label>
+  <input type="text" name="minLoanAmount" id="minLoanAmount">
+	
+  <label for="maxLoanAmount">To</label>
+  <input type="text" name="maxLoanAmount" id="maxLoanAmount">
+</p>
+<p>
+  <label for="minServiceCharge">Service Charge</label>
+  <input type="text" name="minServiceCharge" id="minServiceCharge">
+	
+  <label for="maxServiceCharge">To</label>
+  <input type="text" name="maxServiceCharge" id="maxServiceCharge">
+</p>
+<p>
+  <label for="minCreditScore">Min Credit Score</label>
+  <input type="text" name="minCreditScore" id="minCreditScore">
+</p>
+<p>
+  Channel Fee 
+  <label for="channelFee"></label>
+  <input type="text" name="channelFee" id="channelFee">
+</p>
+<p>
+  Grace Period Days
+  <label for="gracePeriodDays"></label>
+  <input type="text" name="gracePeriodDays" id="gracePeriodDays">
+</p>
+<p>
+  Late Payment Fees
+  <label for="latePaymentFees"></label>
+  <input type="text" name="latePaymentFees" id="latePaymentFees">
+</p>
+<p>
+  <label for="kyc">KYC </label>
+  <select name="kyc" id="kyc">
+	  <option>Personal</option>
+	  <option>Individual</option>
+	  <option>Partner</option>
+  </select>
+</p>
+<p>&nbsp;</p>
+<p>
+  Terms and Conditions	
+    <input type="file" name="file" />
+</p>
+<p>&nbsp;</p>
+
+
+
+<p>
+  <input type="button" name="submit" id="submit" value="Submit" onClick="begin()">
+  <input type="button" name="cancel" id="cancel" value="Cancel" onClick="back()">
+</p>
+
+</form>
+</body>
+	<script src="CreateNewProduct.js"></script>
+</html>

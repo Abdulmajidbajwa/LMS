@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Info Grid</title>
+	<link rel="stylesheet" type="text/css" href="Global.css">
+	<link rel="stylesheet" type="text/css" href="css/table.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+</head>
+<body>
+
+	<div class="userInfoDiv">
+	
+	<div >
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100-body js-pscroll">
+					<table id="userInfoTable">
+						<!-- here goes our data! -->
+					</table>
+				</div>
+	</div>
+	</div>			
+	</div>
+	
+
+		<div class="userInfoButtonDiv">
+		<p>
+			<input type="button" name="addUser" id="addUser" value="Add User" onClick="addUser()"> 
+			<!-- <input type="button" name="productInfo"
+				id="productInfo" value="Products Info" onClick="productInfo()">
+			<input type="button" name="customersInfo" id="customersInfo"
+				value="Customer Info" onClick="customersInfo()"> 
+			<input
+				type="button" name="kycInfo" id="kycInfo" value="KYC Info"
+				onClick="kycInfo()"> 
+			<input type="button" name="rolesInfo"
+				id="rolesInfo" value="Add New Role" onClick="rolesInfo()"> 
+			<input type="button" name="productSpecificationAssumptionsInfo"
+				id="productSpecificationAssumptionsInfo"
+				value="ProdSpecAssumptionsInfo"
+				onClick="productSpecificationAssumptionsInfo()"> -->
+		</p>
+		</div>
+
+	</div>
+	
+<!-- 	<script>
+highlight_row();
+function highlight_row() {
+    var table = document.getElementById('userInfoTable');
+    /* var thead = table.getElementsByTagName('thead'); */
+    /* var tr = thead.getElementsByTagName('tr'); */
+    var cells = table.getElementsByTagName('td');
+
+    for (var i = 0; i < cells.length; i++) {
+        // Take each cell
+        var cell = cells[i];
+        // do something on onclick event for cell
+        cell.onclick = function () {
+            // Get the row id where the cell exists
+            var rowId = this.parentNode.rowIndex;
+
+            var rowsNotSelected = table.getElementsByTagName('tr');
+            for (var row = 0; row < rowsNotSelected.length; row++) {
+                rowsNotSelected[row].style.backgroundColor = "";
+                rowsNotSelected[row].classList.remove('selected');
+            }
+            var rowSelected = table.getElementsByTagName('tr')[rowId];
+            rowSelected.style.backgroundColor = "yellow";
+            rowSelected.className += " selected";
+
+            msg = 'The ID of the company is: ' + rowSelected.cells[0].innerHTML;
+            msg += '\nThe cell value is: ' + this.innerHTML;
+            alert(msg);
+        }
+    }
+
+}
+</script> -->
+</body>
+<script src="UserInfoUsingDynamicTable.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-json/2.6.0/jquery.json.min.js"></script>
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ -->
+<!-- <script>
+highlight_row();
+function highlight_row() {
+    var table = document.getElementById('userInfoTable');
+    /* var thead = table.getElementsByTagName('thead'); */
+    /* var tr = thead.getElementsByTagName('tr'); */
+    var cells = table.getElementsByTagName('td');
+
+    for (var i = 0; i < cells.length; i++) {
+        // Take each cell
+        var cell = cells[i];
+        // do something on onclick event for cell
+        cell.onclick = function () {
+            // Get the row id where the cell exists
+            var rowId = this.parentNode.rowIndex;
+
+            var rowsNotSelected = table.getElementsByTagName('tr');
+            for (var row = 0; row < rowsNotSelected.length; row++) {
+                rowsNotSelected[row].style.backgroundColor = "";
+                rowsNotSelected[row].classList.remove('selected');
+            }
+            var rowSelected = table.getElementsByTagName('tr')[rowId];
+            rowSelected.style.backgroundColor = "yellow";
+            rowSelected.className += " selected";
+
+            msg = 'The ID of the company is: ' + rowSelected.cells[0].innerHTML;
+            msg += '\nThe cell value is: ' + this.innerHTML;
+            alert(msg);
+        }
+    }
+
+}
+</script> -->
+
+
+</html>
